@@ -14,9 +14,7 @@ module.exports = {
     .addBooleanOption((option) =>
       option
         .setName('random')
-        .setDescription(
-          'True per foto casuale, False per foto del giorno (o giorno specificato)'
-        )
+        .setDescription('True per foto casuale')
         .setRequired(false)
     ),
   async execute(interaction) {

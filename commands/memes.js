@@ -5,7 +5,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('meme')
-    .setDescription('Sends an epic meme'),
+    .setDescription('Risponde con un meme epiko!'),
   async execute(interaction) {
     const subReddits = ['dankmeme', 'meme', 'me_irl'];
     // Grab a random property from the array

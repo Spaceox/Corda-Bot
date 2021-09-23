@@ -4,7 +4,7 @@ module.exports = {
   execute(client) {
     console.log(`Ready! Logged in as ${client.user.tag}`);
     client.user.setPresence({
-      activities: [{ name: 'Netflix', type: 'WATCHING' }],
+      activities: [{ name: 'Power, Super Power' }],
     });
     client.user.setStatus('dnd');
   },
