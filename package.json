@@ -10,14 +10,20 @@
     "test": "nodemon -e js",
     "slash": "node ./deploy-commands.js"
   },
-  "author": "Dustmix",
-  "license": "MIT",
+  "author": "Spaceox",
+  "license": "GPL-3.0",
   "dependencies": {
     "@discordjs/builders": "^0.6.0",
+    "@discordjs/opus": "^0.6.0",
     "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.6.0",
     "discord-api-types": "^0.23.1",
+    "discord-music-player": "^8.1.0",
     "discord.js": "^13.1.0",
     "dotenv": "^10.0.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.0",
+    "prism-media": "^2.0.0-alpha.0",
     "random-puppy": "^1.1.0",
     "superagent": "^6.1.0"
   },

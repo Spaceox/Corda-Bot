@@ -2,7 +2,8 @@ module.exports = {
   name: 'ready',
   once: true,
   execute(client) {
-    console.log(`Ready! Logged in as ${client.user.tag}`);
+    // Messaggio di login + RichPresence e Stato
+    console.log(`Eseguito il login come ${client.user.tag}.`);
     client.user.setPresence({
       activities: [{ name: 'Power, Super Power' }],
     });
