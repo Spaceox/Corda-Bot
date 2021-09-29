@@ -8,7 +8,7 @@ module.exports = {
   async execute(interaction) {
     const pinging = new MessageEmbed()
       .setColor('RED')
-      .setTitle(`🏓 Pinging... 🏓`);
+      .setTitle(':ping_pong:  Pinging...');
 
     // Invia un messaggio con l'embed qui sopra..
     const msg = await interaction.reply({
@@ -18,7 +18,7 @@ module.exports = {
 
     // ..e una volta ricevuto comincia a calcolare la latenza..
     const pinged = new MessageEmbed()
-      .setTitle(`🏓 Pong! 🏓`)
+      .setTitle(':ping_pong:  Pong!')
       .setColor('GREEN')
       .setDescription(
         `Latenza: ${Math.floor(

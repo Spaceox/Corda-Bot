@@ -20,7 +20,7 @@ client.commands = new Collection();
 
 // Impostazioni discord-media-player
 const player = new Player(client, {
-  leaveOnEmpty: true,
+  timeout: 5,
 });
 
 // Per accesso più facile
