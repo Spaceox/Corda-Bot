@@ -11,16 +11,16 @@ module.exports = {
       function pad(s) {
         return (s < 10 ? '0' : '') + s;
       }
+      var hours = Math.floor(seconds / (60 * 60));
+      var minutes = Math.floor((seconds % (60 * 60)) / 60);
+      var seconds = Math.floor(seconds % 60);
 
-      return (
-        pad(Math.floor(seconds / (60 * 60))) +
-        ':' +
-        pad(Math.floor((seconds % (60 * 60)) / 60)) +
-        ':' +
-        pad(Math.floor(seconds % 60))
-      );
+      return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
     }
-    const timed = format(process.uptime());
+    // ms => sec https://stackoverflow.com/questions/21294302/converting-milliseconds-to-minutes-and-seconds-with-javascript
+    var millis = ((interaction.client.uptime % 60000) / 1000).toFixed(0);
+    const timed = format(millis);
+    console.log(timed);
 
     // Carica l'uptime in un embed
     const pinged = new MessageEmbed()
